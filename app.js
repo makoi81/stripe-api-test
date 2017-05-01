@@ -4,8 +4,7 @@ var app = express();
 var port = 3000;
 var bodyParser = require("body-parser");
 
-// var listSms = [];
-// var contactList =[];
+/
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
@@ -14,7 +13,7 @@ app.use(express.static("public"));
 // set of views engine for handlebars ejs for ejs
 app.set('view engine', 'ejs')
 
-// set the route from login page to  the home page
+// set the route for  the home page
 app.get('/', function(req, res){
   console.log("hi this list rendering "); 
    res.render("index", { }); 
