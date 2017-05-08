@@ -1,10 +1,8 @@
-var stripe = require('stripe')('sk_test_zGtrmCQ00jQyDYcOio0d6F2M');
+var stripe = require('stripe')('process.env.secretStripeKey');
 var express = require('express');
 var app = express();
 var port = 3000;
 var bodyParser = require("body-parser");
-
-/
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());

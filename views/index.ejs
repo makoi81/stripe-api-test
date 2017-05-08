@@ -4,7 +4,8 @@
   <script 
   src="https://checkout.stripe.com/checkout.js"
   class="stripe-button"
-  data-key ="pk_test_x2likS3Pvzpr2jPk4ZcDqI4h"
+  <!-- data-key ="pk_test_x2likS3Pvzpr2jPk4ZcDqI4h" -->
+  data-key="process.env.publicStripeKey";
   data-name="tringua payment"
   data-amount="3000"
   data-description="this is a way to pay your contribution"
